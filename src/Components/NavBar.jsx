@@ -40,7 +40,7 @@ export const NavBar2 = () => {
                 </button>
                 {dropDownState && (
                     <ul className="absolute top-12 z-10 flex flex-col gap-2 rounded-lg bg-[#393E46] ">
-                        <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 "> <a href="./VendorLogin.jsx" onClick={Login}>Vendor Login</a>  </li>
+                        <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 "> <a href="/" onClick={Login}>Vendor Login</a>  </li>
                         <li className="cursor-pointer  px-6 py-2 text-white hover:bg-sky-600 ">Transport</li>
                         <li className="cursor-pointer  rounded-b-lg px-6 py-2 text-white hover:bg-sky-600">Management</li>
                     </ul>

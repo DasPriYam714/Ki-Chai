@@ -1,15 +1,16 @@
 import React, { useState } from 'react';
 import ResetPassword from './VendorPassChange';
-
-
-
+import Registration from './VendorReg';
+ 
+ 
+ 
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet"></link>
-
-
+ 
+ 
 const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-
+ 
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log('username:', username);
@@ -20,27 +21,27 @@ const Login = () => {
         {/* picture part start here */}
         <div>
         <img
-          src="./public/login page pic 2.png" 
+          src="./login page pic 2.png"
           alt="Login page image"
           className="object-cover w-950 h-1080  mb-6 padding: 10px;"
         />
         </div>
-
+ 
         {/* Form part start here */}
         <div className="bg-white rounded-lg shadow-md px-10 py-8">
             <div>
-                <img src="./public/logo.png" alt="" />
+                <img src="./logo.png" alt="" />
             </div>
             <h1 class="font-roboto" className=" text-2xl font-bold text-center mb-6 text-[#2A6B53]">Welcome to your Account.</h1>
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
             <label htmlFor="username" className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none " placeholder=" UserName" type ="text">
-              
+             
             </label>
             <input
               type="text"
               id="username"
-              className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full p-2.5" placeholder="Login" 
+              className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full p-2.5" placeholder="Login"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
               required
@@ -53,7 +54,7 @@ const Login = () => {
             <input
               type="password"
               id="password"
-              className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full p-2.5" placeholder="Password" 
+              className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full p-2.5" placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               required
@@ -70,7 +71,7 @@ const Login = () => {
                 Remember me
               </label>
             </div>
-            <a href="./VendorPassChange.jsx" onClick={ResetPassword} className="text-sm text-primary-600 hover:underline text-[#FFB800]">
+            <a href="/reset" onClick={ResetPassword} className="text-sm text-primary-600 hover:underline text-[#FFB800]">
               Forgot password?
             </a>
           </div>
@@ -88,17 +89,17 @@ const Login = () => {
               </label>
               </div>
               <div>
-              <a href="#" className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
+              <a href="/vendorReg1" onClick={Registration} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
               Sign Up!
             </a>
             </div>
-
+ 
           </section>
         </form>
         </div>
-
+ 
     </div>
-
+ 
   );
 };
 export default Login;

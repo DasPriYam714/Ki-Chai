@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import Login from './VendorLogin';
-
-
-
+ 
+ 
+ 
 const ResetPassword = () => {
     const [email, setEmail] = useState('');
     const [securityCode, setSecurityCode] = useState('');
-  
+ 
     const handleSubmit = (event) => {
       event.preventDefault();
       // Replace this with your actual logic to send a reset password request
@@ -14,13 +14,13 @@ const ResetPassword = () => {
       console.log('email:', email);
       console.log('securityCode:', securityCode);
     };
-  
+ 
     return (
       <div className="flex flex-row mx-1">
         <div></div>
         <div>
         <img
-          src="./public/login page pic 2.png" 
+          src="./public/login page pic 2.png"
           alt="Login page image"
           className="object-cover w-950 h-1080  mb-6 padding: 10px;"
         />
@@ -38,7 +38,7 @@ const ResetPassword = () => {
               <input
                 type="email"
                 id="email"
-                className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full p-2.5" placeholder="" 
+                className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full p-2.5" placeholder=""
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -66,10 +66,10 @@ const ResetPassword = () => {
   <input type="text" class="block w-[38px] text-center bg-2ray-100 border-transparent rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600" placeholder="⚬" data-hs-pin-input-item />
   <input type="text" class="block w-[38px] text-center bg-2ray-100 border-transparent rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600" placeholder="⚬" data-hs-pin-input-item />
 </div>
-
-
+ 
+ 
             </div> */}
-
+ 
             <div class = "mb-8">
             <label
                 htmlFor="securityCode"
@@ -85,9 +85,9 @@ const ResetPassword = () => {
   <input type="text" class="block w-[38px] text-center bg-2ray-100 border-transparent rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600" placeholder="⚬" data-hs-pin-input-item />
   <input type="text" class="block w-[38px] text-center bg-2ray-100 border-transparent rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600" placeholder="⚬" data-hs-pin-input-item />
 </div>
-                
+               
             </div>
-            
+           
            
             <button
             type="submit"
@@ -96,7 +96,7 @@ const ResetPassword = () => {
           >
             RESET
           </button>
-
+ 
           <section class="flex flex-row p-5 justify-items-center"  >
             <div>
           <label htmlFor="account" className="text-sm text-gray-700 ml-2">
@@ -104,16 +104,16 @@ const ResetPassword = () => {
               </label>
               </div>
               <div>
-              <a href="./VendorLogin.jsx" onClick={Login} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-1">
+              <a href="/" onClick={Login} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-1">
               Login screen
             </a>
             </div>
-
+ 
           </section>
           </form>
         </div>
       </div>
     );
   };
-  
+ 
   export default ResetPassword;
