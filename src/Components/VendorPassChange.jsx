@@ -16,7 +16,7 @@ const ResetPassword = () => {
     };
   
     return (
-      <div className="flex min-h-screen items-center justify-center bg-gray-100">
+      <div className="flex flex-row mx-1">
         <div></div>
         <div>
         <img
@@ -25,7 +25,7 @@ const ResetPassword = () => {
           className="object-cover w-950 h-1080  mb-6 padding: 10px;"
         />
         </div>
-        <div className="bg-white rounded-lg shadow-md px-10 py-8">
+        <div className="bg-white rounded-lg shadow-md p-8 ">
         <div>
                 <img src="./public/logo.png" alt="" />
             </div>
@@ -38,7 +38,7 @@ const ResetPassword = () => {
               <input
                 type="email"
                 id="email"
-                className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full p-2.5" placeholder="Login" 
+                className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full p-2.5" placeholder="" 
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -105,7 +105,7 @@ const ResetPassword = () => {
               </div>
               <div>
               <a href="./VendorLogin.jsx" onClick={Login} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-1">
-              Sign Up!
+              Login screen
             </a>
             </div>
 
