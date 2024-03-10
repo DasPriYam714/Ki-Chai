@@ -31,14 +31,15 @@ const ResetPassword = () => {
             </div>
           <h1 className=" text-xl font-bold text-center mb-6 text-[#2A6B53]">Reset your password</h1>
           <form onSubmit={handleSubmit}>
-            <div className="mb-6">
+            <div className="mb-6 ">
               <label htmlFor="email" className="text-sm text-gray-700 font-medium block mb-2">
                 Email
               </label>
               <input
                 type="email"
                 id="email"
-                className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full p-2.5" placeholder=""
+                className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full p-2.5" placeholder="" 
+                
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -92,7 +93,7 @@ const ResetPassword = () => {
             <button
             type="submit"
             className="text-white bg-primary-500 hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-offset-white"
-            class="btn-lg btn btn-outline btn-warning"
+            class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
           >
             RESET
           </button>
