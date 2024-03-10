@@ -7,6 +7,7 @@ import Registration from "./Components/VendorReg";
 import "./index.css";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import VendorFileUpload from "./Components/VendorFileUpload";
  
 const router = createBrowserRouter([
   {
@@ -20,6 +21,12 @@ const router = createBrowserRouter([
   {
     path: "/vendorReg1",
     element: <Registration />,
+
+  },
+  {
+    path: "/vendorFile",
+    element: <VendorFileUpload />,
+    
   },
 ]);
  

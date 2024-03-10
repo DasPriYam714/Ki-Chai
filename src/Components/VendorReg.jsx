@@ -1,5 +1,10 @@
+
+
+
+
 import React, { useState } from 'react';
 import Login from './VendorLogin';
+import VendorFileUpload from './VendorFileUpload';
 
 const Registration = () => {
   const [firstName, setFirstName] = useState('');
@@ -12,6 +17,10 @@ const Registration = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    
+    // Perform validation checks here
+    
+    // Simulate registration process
     console.log('Registration details:', {
       firstName,
       lastName,
@@ -21,27 +30,36 @@ const Registration = () => {
       city,
       dateOfBirth,
     });
+
+    // Reset form fields after submission
+    setFirstName('');
+    setLastName('');
+    setEmail('');
+    setPassword('');
+    setConfirmPassword('');
+    setCity('');
+    setDateOfBirth('');
   };
 
   return (
     <div className="flex flex-row mx-1">
-         <div>
+      <div>
         <img
           src="./login page pic 2.png" 
           alt="Login page image"
-          className="object-cover w-950 h-1080  mb-6 padding: 10px;"
+          className="bg-auto  w-950 h-1080  mb-6 padding: 10px;"
         />
+      </div>
+
+      <div className="bg-white rounded-auto shadow-md px-10 py-8">
+        <div>
+          <img src="./logo.png" alt="" />
         </div>
 
-      <div className="bg-white rounded-lg shadow-md px-10 py-8">
-      <div>
-                <img src="./logo.png" alt="" />
-            </div>
-
-            <div class=" mx-8">
-            <ul class="relative flex flex-row gap-x-2">
-  {/* <!-- Item --> */}
-  <li class="shrink basis-0 flex-1 group">
+        <div class=" mx-8">
+          <ul class="relative flex flex-row gap-x-2">
+            {/* Stepper items */}
+            <li class="shrink basis-0 flex-1 group">
     <div class="min-w-7 min-h-7 w-full inline-flex items-center text-xs align-middle">
       <span class="size-7 flex justify-center items-center flex-shrink-0 bg-[#FFB800] font-medium text-gray-800 rounded-full outline-[#ff9500] dark:text-[#ff9500]">
         1
@@ -80,13 +98,10 @@ const Registration = () => {
       
     </div>
   </li>
-  {/* <!-- End Item --> */}
-</ul>
-{/* <!-- End Stepper --> */}
-
-
-            </div>
+          </ul>
+        </div>
         <form onSubmit={handleSubmit}>
+          {/* Form fields */}
           <div className="grid grid-cols-1 gap-6">
             {/* Basic Information Section */}
             <div>
@@ -189,13 +204,14 @@ const Registration = () => {
           </div>
 
           {/* Submit Button */}
-          <div className="mt-6">
+          {/* <div className="mt-6">
             <button
               type="submit"
               className="text-white bg-primary-500 hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-offset-white"
               class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+              onClick={VendorFileUpload}
             >
-              Register
+              Continue
             </button>
           </div>
           <div>
@@ -207,8 +223,31 @@ const Registration = () => {
               <a href="/" onClick={Login} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
               Log in!
             </a>
-            </div>
+            </div> */}
         </form>
+        
+        {/* Submit Button */}
+        <div className="mt-6">
+          <button
+            type="submit"
+            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
+            href="/vendorFile" onClick={VendorFileUpload}
+          >
+            Continue
+          </button>
+        </div>
+        
+        {/* Login link */}
+        <div>
+          <label htmlFor="goLogin" className="text-sm text-gray-700 ml-2">
+            You already have an account?
+          </label>
+        </div>
+        <div>
+          <a href="/" onClick={Login} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
+            Log in!
+          </a>
+        </div>
       </div>
     </div>
   );
