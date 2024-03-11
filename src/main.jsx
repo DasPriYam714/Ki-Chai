@@ -8,6 +8,7 @@ import "./index.css";
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import VendorFileUpload from "./Components/VendorFileUpload";
+import UserReg from "./Components/UserReg";
  
 const router = createBrowserRouter([
   {
@@ -26,6 +27,11 @@ const router = createBrowserRouter([
   {
     path: "/vendorFile",
     element: <VendorFileUpload />,
+    
+  },
+  {
+    path: "/userReg",
+    element: <UserReg />,
     
   },
 ]);

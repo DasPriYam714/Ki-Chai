@@ -16,7 +16,7 @@ const ResetPassword = () => {
     };
  
     return (
-      <div className="flex flex-row mx-1">
+      <div className="flex  justify-center ">
         <div></div>
         <div>
         <img

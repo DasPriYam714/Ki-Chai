@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import ResetPassword from './VendorPassChange';
 import Registration from './VendorReg';
-import UserReg from './UserReg';
+ 
+
  
  
- 
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet"></link>
- 
- 
-const Login = () => {
+const UserLogin = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
  
@@ -22,7 +19,7 @@ const Login = () => {
         {/* picture part start here */}
         <div className="w-[50%] h- full">
         <img
-          src="./login page pic 2.png"
+          src="./Design.png"
           alt="Login page image"
           className="object-cover w-full padding: 10px;"
         />
@@ -33,7 +30,7 @@ const Login = () => {
             <div className='mt-10'>
                 <img src="./logo.png" alt="" />
             </div>
-            <h1 class="font-roboto" className=" text-2xl font-bold text-center mb-6 text-[#2A6B53]">Welcome to your Account.</h1>
+            <h1 class="font-roboto" className=" text-2xl font-bold text-center mb-6 text-[#2A6B53]">Welcome, login to your Account.</h1>
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
             
@@ -88,17 +85,21 @@ const Login = () => {
               </label>
               </div>
               <div>
-              <a href="/userReg" onClick={UserReg} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
+              <a href="/vendorReg1" onClick={Registration} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
               Sign Up!
             </a>
             </div>
  
           </section>
         </form>
+        <div>
+        <div className="divider">Or</div>
+        </div>
+
         </div>
  
     </div>
  
   );
 };
-export default Login;
+export default UserLogin;

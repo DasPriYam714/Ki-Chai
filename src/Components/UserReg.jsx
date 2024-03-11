@@ -1,13 +1,9 @@
-
-
-
-
 import React, { useState } from 'react';
 import Login from './VendorLogin';
 import VendorFileUpload from './VendorFileUpload';
 import { Link } from 'react-router-dom';
 
-const Registration = () => {
+const UserReg = () => {
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
@@ -46,7 +42,7 @@ const Registration = () => {
     <div className="flex  justify-center ">
       <div className='w-[60%] h- full'>
         <img
-          src="./login page pic 2.png" 
+          src="./Design.png" 
           alt="Login page image"
           className="object-cover w-full padding: 10px;"
         />
@@ -57,7 +53,7 @@ const Registration = () => {
           <img src="./logo.png" alt="" />
         </div>
 
-        <div class=" mx-8 ">
+        <div class=" mx-4 " className='justify-center ml-20'>
           <ul class="relative flex flex-row gap-x-2">
             {/* Stepper items */}
             <li class="shrink basis-0 flex-1 group">
@@ -85,20 +81,7 @@ const Registration = () => {
       
     </div>
   </li>
-  {/* <!-- End Item -->
-
-  <!-- Item --> */}
-  <li class="shrink basis-0 flex-1 group">
-    <div class="min-w-7 min-h-7 w-full inline-flex items-center text-xs align-middle">
-      <span class="size-7 flex justify-center items-center flex-shrink-0 bg-gray-100 font-medium text-gray-800 rounded-full dark:bg-gray-700 dark:text-[#ff9500]">
-        3
-      </span>
-      <div class="ms-2 w-full h-px flex-1 bg-[#ff9500] group-last:hidden dark:bg-[#ff9500]"></div>
-    </div>
-    <div class="mt-3">
-      
-    </div>
-  </li>
+  
           </ul>
         </div>
         <form onSubmit={handleSubmit}>
@@ -106,7 +89,7 @@ const Registration = () => {
           <div className="grid grid-cols-1 gap-6">
             {/* Basic Information Section */}
             <div>
-              <h2 className="justify-items-start text-xl font-normal mb-6 text-[#2A6B53]">Basic Information</h2>
+              <h2 className="place-content-start text-xl font-normal mb-6 text-[#2A6B53]">Basic Information</h2>
               <div className="grid grid-cols-1 gap-4">
                 <div  className="flex flex-row mx-1 w-full">
                 <div>
@@ -255,4 +238,4 @@ const Registration = () => {
   );
 };
 
-export default Registration;
+export default UserReg;

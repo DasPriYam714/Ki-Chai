@@ -12,7 +12,7 @@ const VendorFileUpload = () => {
 //   };
 
   return (
-    <div className="flex flex-row mx-1">
+    <div className="flex  justify-center ">
         
             
         <div>
@@ -77,7 +77,8 @@ const VendorFileUpload = () => {
         <input
               type="file"
               id="picture1"
-              className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full p-2.5" placeholder="Upload your picture #1"
+              class="border border-gray-300 py-2 px-4 block w-full placeholder-gray-400"
+              placeholder="Upload your picture #1"
               value={picture1}
               onChange={(e) => setPicture(e.target.value)}
               required
@@ -94,6 +95,8 @@ const VendorFileUpload = () => {
               required
             />
             </div>
+
+            <input type="file" placeholder="mmm" className="border-4 file-input file-input-bordered-b-indigo-500 w-full max-w-xs" disabled />
 
             <div className="mb-6">
         <input
