@@ -35,9 +35,7 @@ const Login = () => {
             <h1 class="font-roboto" className=" text-2xl font-bold text-center mb-6 text-[#2A6B53]">Welcome to your Account.</h1>
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
-            <label htmlFor="username" className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none " placeholder=" UserName" type ="text">
-             
-            </label>
+            
             <input
               type="text"
               id="username"

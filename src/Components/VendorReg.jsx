@@ -5,6 +5,7 @@
 import React, { useState } from 'react';
 import Login from './VendorLogin';
 import VendorFileUpload from './VendorFileUpload';
+import { Link } from 'react-router-dom';
 
 const Registration = () => {
   const [firstName, setFirstName] = useState('');
@@ -228,16 +229,16 @@ const Registration = () => {
         
         {/* Submit Button */}
         <div className="mt-6">
-          <button
-            type="submit"
-            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-            href="/vendorFile" onClick={VendorFileUpload}
-          >
-            Continue
-          </button>
+        <button
+  type="submit"
+  className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+
+  <Link to="/vendorFile">Continue</Link>
+</button>
         </div>
         
         {/* Login link */}
+        <div>
         <div>
           <label htmlFor="goLogin" className="text-sm text-gray-700 ml-2">
             You already have an account?
@@ -247,6 +248,7 @@ const Registration = () => {
           <a href="/" onClick={Login} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
             Log in!
           </a>
+        </div>
         </div>
       </div>
     </div>
