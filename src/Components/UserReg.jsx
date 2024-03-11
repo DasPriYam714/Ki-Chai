@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Login from './VendorLogin';
-import VendorFileUpload from './VendorFileUpload';
 import { Link } from 'react-router-dom';
+import UserLogin from './UserLogin';
 
 const UserReg = () => {
   const [firstName, setFirstName] = useState('');
@@ -216,7 +216,7 @@ const UserReg = () => {
   type="submit"
   className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
 
-  <Link to="/vendorFile">Continue</Link>
+  <Link to="/userFile">Continue</Link>
 </button>
         </div>
         
@@ -228,7 +228,7 @@ const UserReg = () => {
           </label>
         </div>
         <div>
-          <a href="/" onClick={Login} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
+          <a href="/userLogin" onClick={UserLogin} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
             Log in!
           </a>
         </div>

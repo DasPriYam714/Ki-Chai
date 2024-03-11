@@ -88,7 +88,7 @@ const Login = () => {
               </label>
               </div>
               <div>
-              <a href="/userReg" onClick={UserReg} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
+              <a href="/vendorReg1" onClick={Registration} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
               Sign Up!
             </a>
             </div>

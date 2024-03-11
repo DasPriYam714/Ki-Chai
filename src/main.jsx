@@ -9,11 +9,13 @@ import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import VendorFileUpload from "./Components/VendorFileUpload";
 import UserReg from "./Components/UserReg";
+import UserFileUpload from "./Components/UserFile";
+import UserLogin from "./Components/UserLogin";
  
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Login />,
+    element: <UserLogin />,
   },
   {
     path: "/reset",
@@ -30,8 +32,18 @@ const router = createBrowserRouter([
     
   },
   {
+    path: "/userLogin",
+    element: <Login/>,
+    
+  },
+  {
     path: "/userReg",
     element: <UserReg />,
+    
+  },
+  {
+    path: "/userFile",
+    element: <UserFileUpload />,
     
   },
 ]);

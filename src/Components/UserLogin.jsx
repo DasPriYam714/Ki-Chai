@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ResetPassword from './VendorPassChange';
 import Registration from './VendorReg';
+import UserReg from './UserReg';
  
 
  
@@ -85,7 +86,7 @@ const UserLogin = () => {
               </label>
               </div>
               <div>
-              <a href="/vendorReg1" onClick={Registration} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
+              <a href="/userReg" onClick={UserReg} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
               Sign Up!
             </a>
             </div>
