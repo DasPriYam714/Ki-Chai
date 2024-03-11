@@ -110,8 +110,8 @@ const UserLogin = () => {
           </div>
 
           </div>
-          <div className="border-2 border-[#FFB800] w-[50%] justify-center">
-            <div>
+          <div className="border-2 flex-auto border-[#FFB800] w-[50%] justify-center ">
+            <div >
             <FcGoogle size={25}/>
 
             </div>

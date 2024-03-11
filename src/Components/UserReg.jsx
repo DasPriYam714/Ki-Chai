@@ -216,7 +216,7 @@ const UserReg = () => {
   type="submit"
   className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
 
-  <Link to="/userFile">Continue</Link>
+  <Link to="/vendorFile">Continue</Link>
 </button>
         </div>
         

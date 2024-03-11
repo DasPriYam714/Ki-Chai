@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Login from './VendorLogin';
+import { MdCloudUpload } from "react-icons/md";
 
 const VendorFileUpload = () => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -8,9 +9,11 @@ const VendorFileUpload = () => {
   const [nidPic, setNIDPicture] = useState(null);
   const [nidBack, setNIDBack] = useState(null);
 
-//   const handleChange = (event) => {
-//     setSelectedFile(event.target.files[0]);
-//   };
+  const handleChange = (event) => {
+    setPicture(event.target.files[0]);
+    setNIDPicture(event.target.files[1]);
+    setNIDBack(event.target.files[2]);
+  };
 
   return (
     <div className="flex  justify-center ">
@@ -71,57 +74,99 @@ const VendorFileUpload = () => {
   </li>
           </ul>
         </div>
-        <form action="">
+        <form action="handleChange">
         <h2 className="justify-items-start text-xl font-normal mb-6 text-[#2A6B53]">Additional Information</h2>
 
-            <div className="mb-6">
-        <input
-              type="file"
-              id="picture1"
-              class="border border-gray-300 py-2 px-4 block w-full placeholder-gray-400"
-              placeholder="Upload your picture #1"
-              value={picture1}
-              onChange={(e) => setPicture(e.target.value)}
-              required
-            />
-            </div>
+        <div className='pt-6'>
+      {/* Invisible file input */}
+      <input
+        type="file"
+        id="picture1"
+        style={{ display: 'none' }}
+        onChange={handleChange}
+      />
 
-            <div className="mb-6">
-        <input
-              type="file"
-              id="nidPic"
-              className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full p-2.5" placeholder="Upload your picture #1"
-              value={nidPic}
-              onChange={(e) => setNIDPicture(e.target.value)}
-              required
-            />
-            </div>
+      {/* Button with icon */}
+      <label htmlFor="fileUpload" className="peer border-b cursor-pointer">
+        <div className="peer border-b-2 flex  gap-14 p-1">
+        <span className='text-gray-400'>Upload your picture #1</span>
+          <MdCloudUpload className="text-[#FFB800] w-6 h-6 justify-items-end"/> 
+          
+        </div>
+      </label>
+
+      {/* Display selected file name */}
+      {picture1 && (
+        <div className="text-sm text-gray-500 mt-2">
+          Selected file: {picture1.name}
+        </div> )}
+        </div>
+
+        <div className='pt-6'>
+      {/* Invisible file input */}
+      <input
+        type="file"
+        id="nidPic"
+        style={{ display: 'none' }}
+        onChange={handleChange}
+      />
+
+      {/* Button with icon */}
+      <label htmlFor="fileUpload" className="peer border-b cursor-pointer">
+        <div className="peer border-b-2 flex  gap-14 p-1">
+        <span className='text-gray-400'>Upload your NID front side #2</span>
+          <MdCloudUpload className="text-[#FFB800] w-6 h-6 justify-items-end"/> 
+          
+        </div>
+      </label>
+
+      {/* Display selected file name */}
+      {picture1 && (
+        <div className="text-sm text-gray-500 mt-2">
+          Selected file: {nidPic.name}
+        </div> )}
+        </div>
+
 
             
 
-            <div className="mb-6">
-        <input
-              type="file"
-              id="nidBack"
-              className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full p-2.5" placeholder="Upload your picture #1"
-              value={nidBack}
-              onChange={(e) => setNIDBack(e.target.value)}
-              required
-            />
-            </div>
+        <div className='pt-6'>
+      {/* Invisible file input */}
+      <input
+        type="file"
+        id="nidBack"
+        style={{ display: 'none' }}
+        onChange={handleChange}
+      />
+
+      {/* Button with icon */}
+      <label htmlFor="fileUpload" className="peer border-b cursor-pointer">
+        <div className="peer border-b-2 flex  gap-14 p-1">
+        <span className='text-gray-400'>Upload your NID front side #2</span>
+          <MdCloudUpload className="text-[#FFB800] w-6 h-6 justify-items-end"/> 
+          
+        </div>
+      </label>
+
+      {/* Display selected file name */}
+      {picture1 && (
+        <div className="text-sm text-gray-500 mt-2">
+          Selected file: {nidBack.name}
+        </div> )}
+        </div>
 
             
         </form>
-        <div className="mt-6">
+        <div className="mt-6 pt-8">
         <button
   type="submit"
-  className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+  className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none  ">
 
   <Link to="/vendorFile">Continue</Link>
 </button>
         </div>
 
-        <div>
+        <div className='pt-6'>
         <div>
           <label htmlFor="goLogin" className="text-sm text-gray-700 ml-2">
             You already have an account?
