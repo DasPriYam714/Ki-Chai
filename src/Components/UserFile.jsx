@@ -2,11 +2,13 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Login from './VendorLogin';
 import UserLogin from './UserLogin';
+import { MdCloudUpload } from "react-icons/md";
 
 const UserFileUpload = () => {
   const [selectedFile, setSelectedFile] = useState(null);
-  const [picture1, setPicture] = useState(null);
-  const [nidPic, setNIDPicture] = useState(null);
+  const handleChange = (event) => {
+    setSelectedFile(event.target.files[0]);
+  };
 
 //   const handleChange = (event) => {
 //     setSelectedFile(event.target.files[0]);
@@ -20,10 +22,10 @@ const UserFileUpload = () => {
         <img
           src="./Design.png" 
           alt="Login page image"
-          className="bg-auto  w-950 h-1080  mb-6 padding: 10px;"
+          className="object-cover w-full padding: 10px;"
         />
       </div>
-      <div className='px-10 py-8'>
+      <div className='bg-white   px-20 py-8 w-[50%]  h-[683px]'>
       <div>
           <img src="./logo.png" alt="" />
         </div>
@@ -55,23 +57,38 @@ const UserFileUpload = () => {
           </ul>
         </div>
         <form action="">
-        <h2 className="justify-items-start text-xl font-normal mb-6 text-[#2A6B53]">Additional Information</h2>
+        <h2 className="justify-items-start text-xl font-normal pt-10 mb-10 text-[#2A6B53]">Additional Information</h2>
 
-            <div className="mb-6">
-        <input
-              type="file"
-              id="picture1"
-              class="border border-gray-300 py-2 px-4 block w-full placeholder-gray-400"
-              placeholder="Upload your picture #1"
-              value={picture1}
-              onChange={(e) => setPicture(e.target.value)}
-              required
-            />
-            </div>
+           
+            <div className='pt-14'>
+      {/* Invisible file input */}
+      <input
+        type="file"
+        id="fileUpload"
+        style={{ display: 'none' }}
+        onChange={handleChange}
+      />
+
+      {/* Button with icon */}
+      <label htmlFor="fileUpload" className="peer border-b cursor-pointer">
+        <div className="peer border-b-2 flex  gap-14 p-1">
+        <span className='text-gray-400'>Upload your picture #1</span>
+          <MdCloudUpload className="text-[#FFB800] w-6 h-6 justify-items-end"/> 
+          
+        </div>
+      </label>
+
+      {/* Display selected file name */}
+      {selectedFile && (
+        <div className="text-sm text-gray-500 mt-2">
+          Selected file: {selectedFile.name}
+        </div>
+      )}
+    </div>
 
             
         </form>
-        <div className="mt-6">
+        <div className="mt-6 pt-8">
         <button
   type="submit"
   className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
@@ -80,7 +97,7 @@ const UserFileUpload = () => {
 </button>
         </div>
 
-        <div>
+        <div className='pt-8'>
         <div>
           <label htmlFor="goLogin" className="text-sm text-gray-700 ml-2">
             You already have an account?

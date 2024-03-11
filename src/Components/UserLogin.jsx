@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import ResetPassword from './VendorPassChange';
 import Registration from './VendorReg';
 import UserReg from './UserReg';
+import { FcGoogle} from "react-icons/fc";
+import { BsFacebook } from "react-icons/bs";
  
 
  
@@ -95,6 +97,30 @@ const UserLogin = () => {
         </form>
         <div>
         <div className="divider">Or</div>
+        </div>
+
+        <div className='flex'>
+          <div className="border-2 border-[#FFB800] w-[50%] justify-center mr-2">
+          <div className='justify-center'>
+          <BsFacebook color='blue' size={25}/>
+          </div>
+         
+          <div>
+            <h4>Login with Facebook</h4>
+          </div>
+
+          </div>
+          <div className="border-2 border-[#FFB800] w-[50%] justify-center">
+            <div>
+            <FcGoogle size={25}/>
+
+            </div>
+            <div>
+            <h4>Login with Google</h4>
+
+            </div>
+          
+          </div>
         </div>
 
         </div>
