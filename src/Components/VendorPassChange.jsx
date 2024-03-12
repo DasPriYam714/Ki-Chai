@@ -8,8 +8,7 @@ const ResetPassword = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Replace this with your actual logic to send a reset password request
-    // and handle the security code
+   
     console.log('email:', email);
     console.log('securityCode:', securityCode);
   };

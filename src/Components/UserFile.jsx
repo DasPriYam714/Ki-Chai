@@ -10,9 +10,6 @@ const UserFileUpload = () => {
     setSelectedFile(event.target.files[0]);
   };
 
-//   const handleChange = (event) => {
-//     setSelectedFile(event.target.files[0]);
-//   };
 
   return (
     <div className="flex flex-col  lg:flex-row  justify-center ">
@@ -61,7 +58,7 @@ const UserFileUpload = () => {
 
            
             <div className='pt-14'>
-      {/* Invisible file input */}
+     
       <input
         type="file"
         id="fileUpload"

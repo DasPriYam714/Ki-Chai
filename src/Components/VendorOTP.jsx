@@ -7,8 +7,7 @@ const VendorOTP = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Replace this with your actual logic to send a reset password request
-    // and handle the security code
+    
     console.log('email:', email);
     console.log('securityCode:', securityCode);
   };
@@ -60,7 +59,7 @@ const VendorOTP = () => {
             className="text-white bg-primary-500 hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-white dark:hover:bg-white dark:focus:ring-offset-white"
             class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
           >
-            <Link to="/" className='text-white'>Login</Link>
+            <Link to="/" className='text-white'>SignUp</Link>
           </button>
 
           <section className="flex flex-row p-5 justify-items-center">

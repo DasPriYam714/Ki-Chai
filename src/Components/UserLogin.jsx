@@ -65,7 +65,7 @@ const UserLogin = () => {
               <input
                 id="remember-me"
                 type="radio"
-                class="radio" checked={false}
+                className="radio-md" 
               />
               <label htmlFor="remember-me" className="text-sm text-gray-700 ml-2">
                 Remember me

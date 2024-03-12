@@ -19,9 +19,7 @@ const Registration = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     
-    // Perform validation checks here
     
-    // Simulate registration process
     console.log('Registration details:', {
       firstName,
       lastName,
@@ -204,27 +202,7 @@ const Registration = () => {
             </div>
           </div>
 
-          {/* Submit Button */}
-          {/* <div className="mt-6">
-            <button
-              type="submit"
-              className="text-white bg-primary-500 hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-offset-white"
-              class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600"
-              onClick={VendorFileUpload}
-            >
-              Continue
-            </button>
-          </div>
-          <div>
-          <label htmlFor="goLogin" className="text-sm text-gray-700 ml-2">
-                You already have an account?
-              </label>
-              </div>
-              <div>
-              <a href="/" onClick={Login} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
-              Log in!
-            </a>
-            </div> */}
+        
         </form>
         
         {/* Submit Button */}

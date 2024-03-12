@@ -16,11 +16,9 @@ const VendorInterest = () => {
   };
   const itemsList = [
     "Plumber", "Technician", "Electrician", "mechanic", "Furniture Assembly",
-    "Moving Help", "Painting", "Mounting", "Icaco", "Jackfruit",
-    "Kiwi", "Lemon", "Mango", "Nectarine", "Orange",
+    "Moving Help", "Painting", "Mounting", "Icaco", "Jackfruit", "Lemon", "Mango", "Orange",
     "Papaya", "Quince", "Raspberry", "Strawberry", "Tomato",
-    "Ugli fruit", "Vanilla bean", "Watermelon", "Ximenia",
-    "Yellow passion fruit"
+    
   ];
 
   return (
