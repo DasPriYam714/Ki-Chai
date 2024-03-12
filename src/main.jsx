@@ -11,6 +11,7 @@ import VendorFileUpload from "./Components/VendorFileUpload";
 import UserReg from "./Components/UserReg";
 import UserFileUpload from "./Components/UserFile";
 import UserLogin from "./Components/UserLogin";
+import UserResetPassword from "./Components/UserResetPass";
  
 const router = createBrowserRouter([
   {
@@ -44,6 +45,11 @@ const router = createBrowserRouter([
   {
     path: "/userFile",
     element: <UserFileUpload />,
+    
+  },
+  {
+    path: "/userPass",
+    element: <UserResetPassword />,
     
   },
 ]);

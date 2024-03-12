@@ -4,6 +4,7 @@ import Registration from './VendorReg';
 import UserReg from './UserReg';
 import { FcGoogle} from "react-icons/fc";
 import { BsFacebook } from "react-icons/bs";
+import UserResetPassword from './UserResetPass';
  
 
  
@@ -70,7 +71,7 @@ const UserLogin = () => {
                 Remember me
               </label>
             </div>
-            <a href="/reset" onClick={ResetPassword} className="text-sm text-primary-600 hover:underline text-[#FFB800]">
+            <a href="/userPass" onClick={UserResetPassword} className="text-sm text-primary-600 hover:underline text-[#FFB800]">
               Forgot password?
             </a>
           </div>
