@@ -14,6 +14,7 @@ import UserLogin from "./Components/UserLogin";
 import UserResetPassword from "./Components/UserResetPass";
 import UserOTP from "./Components/UserOTP";
 import VendorOTP from "./Components/VendorOTP";
+import VendorInterest from "./Components/VendorInter";
  
 const router = createBrowserRouter([
   {
@@ -64,6 +65,11 @@ const router = createBrowserRouter([
   {
     path: "/vendorOTP",
     element: <VendorOTP />,
+    
+  },
+  {
+    path: "/vendorInterest",
+    element: <VendorInterest />,
     
   },
 ]);

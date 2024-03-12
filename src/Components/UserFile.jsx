@@ -15,7 +15,7 @@ const UserFileUpload = () => {
 //   };
 
   return (
-    <div className="flex  justify-center ">
+    <div className="flex flex-col  lg:flex-row  justify-center ">
         
             
         <div>
@@ -71,7 +71,7 @@ const UserFileUpload = () => {
 
       {/* Button with icon */}
       <label htmlFor="fileUpload" className="peer border-b cursor-pointer">
-        <div className="peer border-b-2 flex  gap-14 p-1">
+        <div className="peer border-b-2 flex  justify-between p-4">
         <span className='text-gray-400'>Upload your picture #1</span>
           <MdCloudUpload className="text-[#FFB800] w-6 h-6 justify-items-end"/> 
           

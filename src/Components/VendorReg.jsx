@@ -43,7 +43,7 @@ const Registration = () => {
   };
 
   return (
-    <div className="flex  justify-center ">
+    <div className="flex flex-col  lg:flex-row justify-center ">
       <div className='w-[60%] h- full'>
         <img
           src="./login page pic 2.png" 

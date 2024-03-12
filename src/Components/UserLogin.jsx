@@ -19,7 +19,7 @@ const UserLogin = () => {
     console.log('password:', password);
   };
   return (
-    <div class="flex  justify-center  ">
+    <div class="flex flex-col  lg:flex-row justify-center  ">
         {/* picture part start here */}
         <div className="w-[50%] h- full">
         <img

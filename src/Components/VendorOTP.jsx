@@ -14,7 +14,7 @@ const VendorOTP = () => {
   };
 
   return (
-    <div className="flex justify-center">
+    <div className="flex flex-col  lg:flex-row justify-center">
       <div></div>
       <div>
         <img
