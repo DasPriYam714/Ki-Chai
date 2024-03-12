@@ -101,23 +101,21 @@ const UserLogin = () => {
         </div>
 
         <div className='flex'>
-          <div className="border-2 border-[#FFB800] w-[50%] justify-center mr-2">
-          <div className='justify-center'>
-          <BsFacebook color='blue' size={25}/>
-          </div>
-         
-          <div>
-            <h4>Login with Facebook</h4>
-          </div>
-
-          </div>
-          <div className="border-2 flex-auto border-[#FFB800] w-[50%] justify-center ">
+          <div className="border-2 border-[#FFB800] w-[50%] flex justify-center items-center mr-2">
+  <div className='mr-2'>
+    <BsFacebook color='blue' size={23}/>
+  </div>
+  <div>
+    <h4 className='font-semibold'>Login with Facebook</h4>
+  </div>
+</div>
+          <div className="border-2 border-[#FFB800] w-[50%] flex justify-center items-center mr-2 ">
             <div >
-            <FcGoogle size={25}/>
+            <FcGoogle size={23}/>
 
             </div>
             <div>
-            <h4>Login with Google</h4>
+            <h4 className='font-semibold'>Login with Google</h4>
 
             </div>
           

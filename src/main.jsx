@@ -12,6 +12,7 @@ import UserReg from "./Components/UserReg";
 import UserFileUpload from "./Components/UserFile";
 import UserLogin from "./Components/UserLogin";
 import UserResetPassword from "./Components/UserResetPass";
+import UserOTP from "./Components/UserOTP";
  
 const router = createBrowserRouter([
   {
@@ -34,7 +35,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/userLogin",
-    element: <Login/>,
+    element: <UserLogin/>,
     
   },
   {
@@ -50,6 +51,11 @@ const router = createBrowserRouter([
   {
     path: "/userPass",
     element: <UserResetPassword />,
+    
+  },
+  {
+    path: "/userOTP",
+    element: <UserOTP />,
     
   },
 ]);
