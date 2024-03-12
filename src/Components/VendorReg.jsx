@@ -106,7 +106,7 @@ const Registration = () => {
             <div>
               <h2 className="justify-items-start text-xl font-normal mb-6 text-[#2A6B53]">Basic Information</h2>
               <div className="grid grid-cols-1 gap-4">
-                <div  className="flex flex-row mx-1 w-full">
+                <div  className="flex flex-col  lg:flex-row mx-1 w-full">
                 <div>
                   
                   <input
@@ -137,7 +137,7 @@ const Registration = () => {
               <input
                 type="email"
                 id="email"
-                className= " peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full" placeholder="Email"
+                className= " peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full sm:w-full" placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
@@ -170,7 +170,7 @@ const Registration = () => {
               />
             </div>
 
-            <div className='flex flex-row mx-1 '>
+            <div className='flex flex-col  lg:flex-row mx-1 '>
 
             {/* City section */}
             <div>

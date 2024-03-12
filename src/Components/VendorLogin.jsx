@@ -59,8 +59,8 @@ const Login = () => {
               required
             />
           </div>
-          <div className="flex items-center justify-between mb-6">
-            <div className="flex items-center">
+          <div className="flex flex-col  lg:flex-row items-center justify-between mb-6">
+            <div className="flex flex-col  lg:flex-row items-center">
               <input
                 id="remember-me"
                 type="radio"
@@ -81,7 +81,7 @@ const Login = () => {
           >
             Login
           </button>
-          <section class="flex flex-row p-5 justify-items-center"  >
+          <section class="flex flex-col  lg:flex-row p-5 justify-items-center"  >
             <div>
           <label htmlFor="account" className="text-sm text-gray-700 ml-2">
                 Don't have a account yet?
