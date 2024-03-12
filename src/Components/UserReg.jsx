@@ -87,9 +87,9 @@ const UserReg = () => {
           <div className="grid grid-cols-1 gap-6">
             {/* Basic Information Section */}
             <div>
-              <h2 className="place-content-start text-xl font-normal mb-6 text-[#2A6B53]">Basic Information</h2>
+              <h2 className="place-content-start text-xl font-normal text-left mb-6 text-[#2A6B53]">Basic Information</h2>
               <div className="grid grid-cols-1 gap-4">
-                <div  className="flex flex-row mx-1 w-full">
+                <div  className="flex flex-col  lg:flex-row mx-1 w-full">
                 <div>
                   
                   <input
@@ -153,7 +153,7 @@ const UserReg = () => {
               />
             </div>
 
-            <div className='flex flex-row mx-1 '>
+            <div className='flex flex-col  lg:flex-row mx-1 '>
 
             {/* City section */}
             <div>
@@ -219,3 +219,4 @@ const UserReg = () => {
 };
 
 export default UserReg;
+

@@ -75,7 +75,7 @@ const VendorFileUpload = () => {
           </ul>
         </div>
         <form action="handleChange">
-        <h2 className="justify-items-start text-xl font-normal mb-6 text-[#2A6B53]">Additional Information</h2>
+        <h2 className="font-roboto justify-items-start text-xl text-left font-normal mb-6 text-[#2A6B53]">Additional Information</h2>
 
         <div className='pt-6'>
       {/* Invisible file input */}

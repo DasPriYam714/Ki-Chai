@@ -25,7 +25,7 @@ const UserOTP = () => {
         <div>
           <img src="./logo.png" alt="" />
         </div>
-        <h2 className="text-xl font-bold text-center mb-6 text-[#2A6B53]">Please, verify your account.</h2>
+        <h2 className="font-roboto text-xl font-normal text-left mb-6 text-[#2A6B53]">Please, verify your account.</h2>
         <div>
           <h4 className='text-left'>We sent a verification code to email. Enter the code from the email in the field below.</h4>
         </div>

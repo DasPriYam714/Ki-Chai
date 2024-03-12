@@ -27,7 +27,7 @@ const UserResetPassword = () => {
         <div>
           <img src="./logo.png" alt="" />
         </div>
-        <h2 className="text-xl font-bold text-center mb-6 text-[#2A6B53]">Reset your password</h2>
+        <h2 className="font-roboto text-xl font-normal text-center mb-6 text-[#2A6B53]">Reset your password</h2>
         <div>
           <h4 className='text-left'>We sent a verification code to email. Enter the code from the email in the field below.</h4>
         </div>
