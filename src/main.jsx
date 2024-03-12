@@ -13,11 +13,12 @@ import UserFileUpload from "./Components/UserFile";
 import UserLogin from "./Components/UserLogin";
 import UserResetPassword from "./Components/UserResetPass";
 import UserOTP from "./Components/UserOTP";
+import VendorOTP from "./Components/VendorOTP";
  
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <UserLogin />,
+    element: <Login />,
   },
   {
     path: "/reset",
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
     element: <VendorFileUpload />,
     
   },
+  
   {
     path: "/userLogin",
     element: <UserLogin/>,
@@ -56,6 +58,12 @@ const router = createBrowserRouter([
   {
     path: "/userOTP",
     element: <UserOTP />,
+    
+  },
+
+  {
+    path: "/vendorOTP",
+    element: <VendorOTP />,
     
   },
 ]);

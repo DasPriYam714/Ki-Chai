@@ -142,7 +142,7 @@ const VendorFileUpload = () => {
       {/* Button with icon */}
       <label htmlFor="fileUpload" className="peer border-b cursor-pointer">
         <div className="peer border-b-2 flex  gap-14 p-1">
-        <span className='text-gray-400'>Upload your NID front side #2</span>
+        <span className='text-gray-400'>Upload your NID front side #3</span>
           <MdCloudUpload className="text-[#FFB800] w-6 h-6 justify-items-end"/> 
           
         </div>
@@ -162,7 +162,7 @@ const VendorFileUpload = () => {
   type="submit"
   className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none  ">
 
-  <Link to="/vendorFile">Continue</Link>
+  <Link to="/vendorOTP" className='text-white'>Continue</Link>
 </button>
         </div>
 
