@@ -33,7 +33,7 @@ const Login = () => {
             <div className='mt-10'>
                 <img src="./logo.png" alt="" />
             </div>
-            <h1 class="font-roboto" className=" text-2xl font-bold text-center mb-6 text-[#2A6B53]">Welcome to your Account.</h1>
+            <h1 class="font-roboto" className="font-roboto text-xl font-bold text-center mb-6 text-[#2A6B53]">Welcome, Login to your Account.</h1>
         <form onSubmit={handleSubmit}>
           <div className="mb-6">
             
