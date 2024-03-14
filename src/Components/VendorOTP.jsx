@@ -41,7 +41,7 @@ const VendorOTP = () => {
             >
               Type your 6 digit security code
             </label>
-            <div className="flex space-x-3" data-hs-pin-input>
+            <div className="flex space-x-3 justify-center" data-hs-pin-input>
               {[...Array(6)].map((_, index) => (
                 <input
                   key={index}

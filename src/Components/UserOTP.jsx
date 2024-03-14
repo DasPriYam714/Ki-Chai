@@ -13,24 +13,24 @@ const UserOTP = () => {
 
   return (
     <div className="flex flex-col  lg:flex-row justify-center">
-      <div></div>
-      <div>
+      
+      <div className='w-full lg:absolute inset-0 lg:w-1/2 h-full'>
         <img
           src="./Design.png"
           alt="Login page image"
-          className="object-cover w-950 h-1080 mb-6 p-10"
+          className="object-cover w-[100%]"
         />
       </div>
-      <div className="bg-white rounded-lg  p-8">
-        <div>
+      <div className="bg-white    py-8 w-full lg:w-1/2 h-auto lg:absolute inset-y-0 right-0  mt-20 p-20">
+        <div className='flex justify-center'>
           <img src="./logo.png" alt="" />
         </div>
-        <h2 className="font-roboto text-xl font-normal text-left mb-6 text-[#2A6B53]">Please, verify your account.</h2>
+        <h2 className="font-roboto text-xl font-normal text-left mb-6 text-[#2A6B53] lg:mx-20 mt-15">Please, verify your account.</h2>
         <div>
-          <h4 className='text-left'>We sent a verification code to email. Enter the code from the email in the field below.</h4>
+          <h4 className='text-left lg:mx-20 mt-15'>We sent a verification code to email. Enter the code from the email in the field below.</h4>
         </div>
 
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='lg:mx-20 mt-15'>
           
 
           <div className="mb-8 mt-6">
@@ -40,7 +40,7 @@ const UserOTP = () => {
             >
               Type your 6 digit security code
             </label>
-            <div className="flex space-x-3" data-hs-pin-input>
+            <div className="flex space-x-3 justify-center" data-hs-pin-input>
               {[...Array(6)].map((_, index) => (
                 <input
                   key={index}
@@ -61,7 +61,7 @@ const UserOTP = () => {
             <Link to="/userLogin" className='text-white'>Login</Link>
           </button>
 
-          <section className="flex flex-row p-5 justify-items-center">
+          <section className="flex flex-row p-5 justify-center">
             <div>
               <label htmlFor="account" className="text-sm text-gray-700 ml-2">
                 Go back to

@@ -46,7 +46,7 @@ const Registration = () => {
       </div>
 
       {/* Form part */}
-      <div className="bg-white px-20 py-8 w-[50%] h-full">
+      <div className="bg-white   w-[50%] h-full">
         <div>
           <img src="./logo.png" alt="" />
         </div>

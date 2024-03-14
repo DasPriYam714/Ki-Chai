@@ -15,7 +15,7 @@ const Login = () => {
   return (
     <div className="flex flex-col lg:flex-row justify-center">
       {/* Picture part */}
-      <div className="w-full lg:w-1/2 h-full">
+      <div className="w-full lg:absolute inset-0 lg:w-1/2 h-full">
         <img
           src="./login page pic 2.png"
           alt="Login page image"
@@ -24,14 +24,14 @@ const Login = () => {
       </div>
 
       {/* Form part */}
-      <div className="bg-white px-10 py-8 w-full lg:w-1/2 h-auto">
-        <div className="mt-10">
+      <div className="bg-white    py-8 w-full lg:w-1/2 h-auto lg:absolute inset-y-0 right-0  mt-20 p-20">
+        <div className="mt-10 flex justify-center">
           <img src="./logo.png" alt="" />
         </div>
         <h1 className="font-roboto text-xl font-normal text-center mb-6 text-[#2A6B53]">
           Welcome, Login to your Account.
         </h1>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='lg:mx-20 mt-15'>
           <div className="mb-6">
             <input
               type="text"
@@ -72,7 +72,7 @@ const Login = () => {
           >
             Login
           </button>
-          <section className="flex flex-col lg:flex-row p-5 justify-items-center">
+          <section className="flex flex-col lg:flex-row p-5 justify-center">
             <div>
               <label htmlFor="account" className="text-sm text-gray-700 ml-2">
                 Don't have a account yet?
