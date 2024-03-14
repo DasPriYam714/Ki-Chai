@@ -30,7 +30,7 @@ const VendorFileUpload = () => {
       <div className='flex justify-center'>
           <img src="./logo.png" alt="" />
         </div>
-        <div class=" mx-8">
+        <div class=" mx-8 lg:mx-20 mt-15 pl-14">
           <ul class="relative flex flex-row gap-x-2">
             {/* Stepper items */}
             <li class="shrink basis-0 flex-1 group">
