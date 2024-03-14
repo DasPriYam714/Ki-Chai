@@ -27,7 +27,7 @@ const UserResetPassword = () => {
         <div className='justify-center lg:mx-20 mt-15'>
           <img src="./logo.png" alt="" />
         </div>
-        <h2 className="font-roboto text-xl font-normal text-center mb-6 text-[#2A6B53] mx-20 mt-15">Reset your password</h2>
+        <h2 className="font-roboto text-xl font-normal text-left mb-6 text-[#2A6B53] lg:mx-20 mt-15">Reset your password</h2>
         <div>
           <h4 className='text-left lg:mx-20 mt-15'>We sent a verification code to email. Enter the code from the email in the field below.</h4>
         </div>
@@ -53,7 +53,7 @@ const UserResetPassword = () => {
                 <input
                   key={index}
                   type="text"
-                  className="block w-[48px] h-[40px] text-center border-2 rounded-md bg-slate-300 text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-100 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600"
+                  className="block w-[48px] h-[40px] text-center border-2 rounded-md bg-slate-300 text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-100 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600 lg:block w-[75px] h-[58px]"
                   placeholder="⚬"
                   data-hs-pin-input-item
                 />

@@ -25,15 +25,15 @@ const VendorInterest = () => {
     <div className="flex flex-col  lg:flex-row justify-center ">
         
             
-        <div>
+        <div className="w-full lg:absolute inset-0 lg:w-1/2 h-full">
         <img
           src="./login page pic 2.png" 
           alt="Login page image"
           className="bg-auto  w-950 h-1080  mb-6 padding: 10px;"
         />
       </div>
-      <div className='px-10 py-8'>
-      <div>
+      <div className="bg-white    py-5 w-full lg:w-1/2 h-auto lg:absolute inset-y-0 right-0  mt-20 p-20">
+      <div className='mt-4 flex justify-center'>
           <img src="./logo.png" alt="" />
         </div>
         <div class=" mx-8">
@@ -81,7 +81,7 @@ const VendorInterest = () => {
   </li>
           </ul>
         </div>
-        <form action="">
+        <form action="" className='lg:mx-20 mt-15'>
         <h2 className="font-roboto text-xl font-normal text-left mb-6 text-[#2A6B53]">Interest</h2>
 
         <div className="overflow-y-auto max-h-64 border-2">
@@ -96,7 +96,7 @@ const VendorInterest = () => {
     </div>
         </form>
         
-        <div className="mt-6 pt-8">
+        <div className="mt-6 pt-8 lg:mx-20 mt-15">
         <button
   type="submit"
   className="w-full py-3 px-4 inline-flex justify-center items-center text-center gap-x-2 text-sm font-semibold rounded-lg border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none  ">
