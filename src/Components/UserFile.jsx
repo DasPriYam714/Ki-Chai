@@ -31,34 +31,29 @@ const UserFileUpload = () => {
       <div className='mt-8 flex justify-center'>
           <img src="./logo.png" alt="" />
         </div>
-        <div class=" mx-8 flex justify-center">
-          <ul class="relative flex flex-row gap-x-24  justify-center">
+        <div className="mx-8 lg:mx-20 mt-15 pl-14">
+          <ul className="relative flex flex-row gap-x-2">
             {/* Stepper items */}
-            <li class="shrink basis-0 flex-1 group">
-    <div class="min-w-7 min-h-7 w-full inline-flex items-center text-xs align-middle">
-      <span class="size-7 flex justify-center items-center flex-shrink-0 bg-[#FFB800] font-medium text-gray-800 rounded-full outline-[#ff9500] dark:text-[#ff9500]">
-        1
-      </span>
-      <div class="ms-2 w-full h-px flex-1 bg-[#ff9500] group-last:hidden dark:bg-[#ff9500]"></div>
-    </div>
-    <div class="mt-3">
-      
-    </div>
-  </li>
-  {/* <!-- End Item -->
-
-  <!-- Item --> */}
-  <li class="shrink basis-0 flex-1 group">
-    <div class="min-w-7 min-h-7 w-full inline-flex items-center text-xs align-middle">
-      <span class="size-7 flex justify-center items-center flex-shrink-0 bg-[#FFB800] font-medium text-gray-800 rounded-full border-[#ff9500] dark:text-[#ff9500]">
-        2
-      </span>
-      <div class="ms-2 w-full h-px flex-1 bg-[#ff9500] group-last:hidden dark:bg-[#ff9500]"></div>
-    </div>
-    <div class="mt-3">
-      
-    </div>
-  </li>
+            <li className="shrink basis-0 flex-1 group">
+              <div className="min-w-7 min-h-7 w-full inline-flex items-center text-xs align-middle">
+                <span className="size-7 flex justify-center items-center flex-shrink-0 bg-[#FFB800] font-medium text-gray-800 rounded-full outline-[#ff9500] dark:text-[#ff9500]">
+                  1
+                </span>
+                <div className="ms-2 w-full h-px flex-1 bg-[#ff9500] group-last:hidden dark:bg-[#ff9500]"></div>
+              </div>
+              <div className="mt-3"></div>
+            </li>
+            {/* <!-- End Item --> */}
+            {/* <!-- Item --> */}
+            <li className="shrink basis-0 flex-1 group">
+              <div className="min-w-7 min-h-7 w-full inline-flex items-center text-xs align-middle">
+                <span className="size-7 flex justify-center items-center flex-shrink-0 bg-[#FFB800] font-medium text-gray-800 rounded-full border-[#ff9500] dark:text-[#ff9500]">
+                  2
+                </span>
+                <div className="ms-2 w-full h-px flex-1 bg-[#ff9500] group-last:hidden dark:bg-[#ff9500]"></div>
+              </div>
+              <div className="mt-3"></div>
+            </li>
           </ul>
         </div>
         <form action="handleChange" className='lg:mx-20 mt-15'>

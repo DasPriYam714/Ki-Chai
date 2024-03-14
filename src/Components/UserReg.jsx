@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Login from './VendorLogin';
+import VendorFileUpload from './VendorFileUpload';
 import { Link } from 'react-router-dom';
 import UserLogin from './UserLogin';
+import UserFileUpload from './UserFile';
 
 const UserReg = () => {
   const [firstName, setFirstName] = useState('');
@@ -14,8 +16,6 @@ const UserReg = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    
-  
     console.log('Registration details:', {
       firstName,
       lastName,
@@ -37,181 +37,166 @@ const UserReg = () => {
   };
 
   return (
-    <div className="flex flex-col  lg:flex-row justify-center ">
-      <div className='w-[60%] h- full'>
+    <div className="flex flex-col lg:flex-row justify-center">
+      {/* Picture part */}
+      <div className="w-full lg:absolute inset-0 lg:w-1/2 h-full">
         <img
-          src="./Design.png" 
+          src="./Design.png"
           alt="Login page image"
-          className="object-cover w-full padding: 10px;"
+          className="object-cover w-full"
         />
       </div>
 
-      <div className="bg-white   px-20 py-8 w-[50%]  h-[100%]">
-        <div>
+      {/* Form part */}
+      <div className="bg-white    py-8 w-full lg:w-1/2 h-auto lg:absolute inset-y-0 right-0  mt-20 p-20">
+        <div className="mt-5 flex justify-center">
           <img src="./logo.png" alt="" />
         </div>
 
-        <div class=" mx-4 " className='justify-center ml-20'>
-          <ul class="relative flex flex-row gap-x-2">
+        <div className="mx-8 lg:mx-20 mt-15 pl-14">
+          <ul className="relative flex flex-row gap-x-2">
             {/* Stepper items */}
-            <li class="shrink basis-0 flex-1 group">
-    <div class="min-w-7 min-h-7 w-full inline-flex items-center text-xs align-middle">
-      <span class="size-7 flex justify-center items-center flex-shrink-0 bg-[#FFB800] font-medium text-gray-800 rounded-full outline-[#ff9500] dark:text-[#ff9500]">
-        1
-      </span>
-      <div class="ms-2 w-full h-px flex-1 bg-[#ff9500] group-last:hidden dark:bg-[#ff9500]"></div>
-    </div>
-    <div class="mt-3">
-      
-    </div>
-  </li>
-  {/* <!-- End Item -->
-
-  <!-- Item --> */}
-  <li class="shrink basis-0 flex-1 group">
-    <div class="min-w-7 min-h-7 w-full inline-flex items-center text-xs align-middle">
-      <span class="size-7 flex justify-center items-center flex-shrink-0 bg-gray-100 font-medium text-gray-800 rounded-full border-[#ff9500] dark:text-[#ff9500]">
-        2
-      </span>
-      <div class="ms-2 w-full h-px flex-1 bg-[#ff9500] group-last:hidden dark:bg-[#ff9500]"></div>
-    </div>
-    <div class="mt-3">
-      
-    </div>
-  </li>
-  
+            <li className="shrink basis-0 flex-1 group">
+              <div className="min-w-7 min-h-7 w-full inline-flex items-center text-xs align-middle">
+                <span className="size-7 flex justify-center items-center flex-shrink-0 bg-[#FFB800] font-medium text-gray-800 rounded-full outline-[#ff9500] dark:text-[#ff9500]">
+                  1
+                </span>
+                <div className="ms-2 w-full h-px flex-1 bg-[#ff9500] group-last:hidden dark:bg-[#ff9500]"></div>
+              </div>
+              <div className="mt-3"></div>
+            </li>
+            {/* <!-- End Item --> */}
+            {/* <!-- Item --> */}
+            <li className="shrink basis-0 flex-1 group">
+              <div className="min-w-7 min-h-7 w-full inline-flex items-center text-xs align-middle">
+                <span className="size-7 flex justify-center items-center flex-shrink-0 bg-gray-100 font-medium text-gray-800 rounded-full border-[#ff9500] dark:text-[#ff9500]">
+                  2
+                </span>
+                <div className="ms-2 w-full h-px flex-1 bg-[#ff9500] group-last:hidden dark:bg-[#ff9500]"></div>
+              </div>
+              <div className="mt-3"></div>
+            </li>
           </ul>
         </div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='lg:mx-20 mt-15'>
           {/* Form fields */}
           <div className="grid grid-cols-1 gap-6">
             {/* Basic Information Section */}
             <div>
-              <h2 className="place-content-start text-xl font-normal text-left mb-6 text-[#2A6B53]">Basic Information</h2>
+              <h2 className="justify-items-start text-xl text-left font-normal mb-6 text-[#2A6B53] py-5">Basic Information</h2>
               <div className="grid grid-cols-1 gap-4">
-                <div  className="flex flex-col  lg:flex-row mx-1 w-full">
-                <div>
-                  
-                  <input
-                    type="text"
-                    id="firstName"
-                    className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-half  mr-4" placeholder="First Name"
-                    value={firstName}
-                    onChange={(e) => setFirstName(e.target.value)}
-                    required
-                  />
-                </div>
-                <div>
-                  <input
-                    type="text"
-                    id="lastName"
-                    className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-half " placeholder="Last Name"
-                    value={lastName}
-                    onChange={(e) => setLastName(e.target.value)}
-                    required
-                  />
+                <div className="flex flex-col lg:flex-row w-full justify-between">
+                  <div>
+                    <input
+                      type="text"
+                      id="firstName"
+                      className="peer border-b border-[#393939] py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full mr-5 lg: w-full mr-10"
+                      placeholder="First Name"
+                      value={firstName}
+                      onChange={(e) => setFirstName(e.target.value)}
+                      required
+                    />
+                  </div>
+                  <div>
+                    <input
+                      type="text"
+                      id="lastName"
+                      className="peer border-b border-[#393939] py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full lg: w-full"
+                      placeholder="Last Name"
+                      value={lastName}
+                      onChange={(e) => setLastName(e.target.value)}
+                      required
+                    />
+                  </div>
                 </div>
               </div>
             </div>
-            </div>
-
             {/* Email Section */}
             <div>
               <input
                 type="email"
                 id="email"
-                className= " peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full" placeholder="Email"
+                className="peer border-b border-[#393939] py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full sm:w-full"
+                placeholder="Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
-
             {/* Password Section */}
             <div>
-              
               <input
                 type="password"
                 id="password"
-                className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full " placeholder="Password"
+                className="peer border-b border-[#393939] py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full "
+                placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
               />
             </div>
-
             {/* Confirm Password Section */}
             <div>
-              
               <input
                 type="password"
                 id="confirmPassword"
-                className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full " placeholder="Confirm Password"
+                className="peer border-b border-[#393939] py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full "
+                placeholder="Confirm Password"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
                 required
               />
             </div>
-
-            <div className='flex flex-col  lg:flex-row mx-1 '>
-
-            {/* City section */}
-            <div>
-              
-              <input
-                type="text"
-                id="city"
-                className=" peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-half  mr-4" placeholder="City"
-                value={city}
-                onChange={(e) => setCity(e.target.value)}
-                required
-              />
-            </div>
-
-            
-
-            {/* Date of Birth Section */}
-            <div>
-             
-              <input
-                type="date"
-                id="dateOfBirth"
-                className= "peer border-b border-[#393939]  py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full " placeholder="Date of Birth"
-                value={dateOfBirth}
-                onChange={(e) => setDateOfBirth(e.target.value)}
-                required
-              />
-            </div>
+            <div className="flex flex-col lg:flex-row w-[100%] justify-between ">
+              {/* City section */}
+              <div>
+                <input
+                  type="text"
+                  id="city"
+                  className="peer border-b border-[#393939] py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full mr-10 lg: w-full"
+                  placeholder="City"
+                  value={city}
+                  onChange={(e) => setCity(e.target.value)}
+                  required
+                />
+              </div>
+              {/* Date of Birth Section */}
+              <div>
+                <input
+                  type="date"
+                  id="dateOfBirth"
+                  className="peer border-b border-[#393939] py-2 text-[#393939] focus:outline-none focus:border-primary-500 block w-full "
+                  placeholder="Date of Birth"
+                  value={dateOfBirth}
+                  onChange={(e) => setDateOfBirth(e.target.value)}
+                  required
+                />
+              </div>
             </div>
           </div>
-
-         
-            
         </form>
-        
         {/* Submit Button */}
-        <div className="mt-6">
-        <button
-  type="submit"
-            className="text-white bg-primary-500 hover:bg-primary-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-white dark:hover:bg-white dark:focus:ring-offset-white"
-            class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
-
-  <Link to="/userFile" className='text-white'>Continue</Link>
-</button>
+        <div className="mt-6 lg:mx-20 mt-15">
+          <button
+            type="submit"
+            className="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#FFB800] text-white hover:bg-[#ffb700d3] disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+            <Link to="/userFile" className="text-white">
+              Continue
+            </Link>
+          </button>
         </div>
-        
         {/* Login link */}
-        <div>
-        <div>
-          <label htmlFor="goLogin" className="text-sm text-gray-700 ml-2">
-            You already have an account?
-          </label>
-        </div>
-        <div>
-          <a href="/userLogin" onClick={UserLogin} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
-            Log in!
-          </a>
-        </div>
+        <div className='pt-5 justify-center'>
+          <div>
+            <label htmlFor="goLogin" className="text-sm text-gray-700 ml-2">
+              You already have an account?
+            </label>
+          </div>
+          <div>
+            <a href="/userLogin" onClick={UserLogin} className="text-sm text-primary-600 hover:underline text-[#FFB800] ps-2">
+              Log in!
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -219,4 +204,3 @@ const UserReg = () => {
 };
 
 export default UserReg;
-

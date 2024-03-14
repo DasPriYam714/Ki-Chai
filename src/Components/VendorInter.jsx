@@ -82,7 +82,7 @@ const VendorInterest = () => {
           </ul>
         </div>
         <form action="" className='lg:mx-20 mt-15'>
-        <h2 className="font-roboto text-xl font-normal text-left mb-6 text-[#2A6B53]">Interest</h2>
+        <h2 className="font-roboto text-xl font-normal text-left mb-6 text-[#2A6B53] py-5">Interest</h2>
 
         <div className="overflow-y-auto max-h-64 border-2">
       <ul className="space-y-2">

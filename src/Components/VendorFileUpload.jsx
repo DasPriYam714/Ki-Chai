@@ -30,7 +30,7 @@ const VendorFileUpload = () => {
       <div className='flex justify-center'>
           <img src="./logo.png" alt="" />
         </div>
-        <div class=" mx-8 lg:mx-20 mt-15 pl-14">
+        <div class=" mx-2 lg:mx-20 mt-15 pl-14">
           <ul class="relative flex flex-row gap-x-2">
             {/* Stepper items */}
             <li class="shrink basis-0 flex-1 group">
@@ -75,7 +75,7 @@ const VendorFileUpload = () => {
           </ul>
         </div>
         <form action="handleChange" className='lg:mx-20 mt-15'>
-        <h2 className="font-roboto justify-items-start text-xl text-left font-normal mb-6 text-[#2A6B53]">Additional Information</h2>
+        <h2 className="font-roboto justify-items-start text-xl text-left font-normal mb-6 text-[#2A6B53] py-5">Additional Information</h2>
 
         <div className='pt-6'>
       {/* Invisible file input */}

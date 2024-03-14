@@ -92,7 +92,7 @@ const Registration = () => {
           <div className="grid grid-cols-1 gap-6">
             {/* Basic Information Section */}
             <div>
-              <h2 className="justify-items-start text-xl text-left font-normal mb-6 text-[#2A6B53]">Basic Information</h2>
+              <h2 className="justify-items-start text-xl text-left font-normal mb-6 text-[#2A6B53] py-5">Basic Information</h2>
               <div className="grid grid-cols-1 gap-4">
                 <div className="flex flex-col lg:flex-row w-full justify-between">
                   <div>
