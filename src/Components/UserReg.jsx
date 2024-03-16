@@ -53,8 +53,8 @@ const UserReg = () => {
           <img src="./logo.png" alt="" />
         </div>
 
-        <div className="mx-8 lg:mx-24 mt-1 pl-14">
-          <ul className="relative flex flex-row gap-x-2">
+        <div className="mx-8 lg:mx-24 mt-1 pl-14 just-center">
+          <ul className="relative flex flex-row gap-x-1 lg: justify-center">
             {/* Stepper items */}
             <li className="shrink basis-0 flex-1 group">
               <div className="min-w-5 min-h-5 w-full inline-flex items-center text-xs align-middle">
@@ -85,7 +85,7 @@ const UserReg = () => {
             <div>
               <h2 className="justify-items-start text-xl text-left font-normal mb-4 text-[#2A6B53] py-5">Basic Information</h2>
               <div className="grid grid-cols-1 gap-4">
-                <div className="flex flex-col lg:flex-row w-full justify-stretch gap-10">
+                <div className="flex flex-col lg:flex-row w-full justify-between gap-10">
                   <div>
                     <input
                       type="text"

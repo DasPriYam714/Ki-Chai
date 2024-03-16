@@ -16,14 +16,14 @@ const ResetPassword = () => {
   return (
     <div className="flex flex-col  lg:flex-row justify-center">
       <div></div>
-      <div className="w-full lg:absolute inset-0 lg:w-1/2 h-full">
+      <div className="w-full lg:absolute inset-0 lg:w-1/2 h-full overflow-y-hidden">
         <img
           src="./login page pic 2.png"
           alt="Login page image"
           className="object-cover w-[100%]"
         />
       </div>
-      <div className="bg-white    py-8 w-full lg:w-1/2 h-auto lg:absolute inset-y-0 right-0  mt-20 p-20 ">
+      <div className="bg-white    py-8 w-full lg:w-1/2 h-auto lg:absolute inset-y-0 right-0  mt-20 p-20 pb-6 ">
         <div className='justify-center lg:mx-20 mt-15'>
           <img src="./logo.png" alt="" />
         </div>
@@ -53,7 +53,7 @@ const ResetPassword = () => {
                 <input
                   key={index}
                   type="text"
-                  className="block w-[48px] h-[40px] text-center border-2 rounded-md bg-slate-300 text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-100 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600 lg:block w-[75px] h-[58px]"
+                  className="block w-[48px] h-[40px] text-center border-2 rounded-md bg-slate-300 text-2xl focus:border-blue-500 focus:ring-blue-500 disabled:opacity-100 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600 lg:block w-[75px] h-[58px]"
                   placeholder="⚬"
                   data-hs-pin-input-item
                 />

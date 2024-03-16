@@ -19,14 +19,14 @@ const VendorFileUpload = () => {
     <div className="flex flex-col  lg:flex-row justify-center ">
         
             
-        <div className="w-full lg:absolute inset-0 lg:w-1/2 h-full">
+        <div className="w-full lg:absolute inset-0 lg:w-1/2 h-full overflow-y-hidden">
         <img
           src="./login page pic 2.png" 
           alt="Login page image"
           className="bg-auto  w-950 h-1080  mb-6 padding: 10px;"
         />
       </div>
-      <div className="bg-white    py-5 w-full lg:w-1/2 h-auto lg:absolute inset-y-0 right-0  mt-20 p-20">
+      <div className="bg-white    py-5 w-full lg:w-1/2 h-auto lg:absolute inset-y-0 right-0  mt-15 p-20">
       <div className='flex justify-center'>
           <img src="./logo.png" alt="" />
         </div>
@@ -75,7 +75,7 @@ const VendorFileUpload = () => {
           </ul>
         </div>
         <form action="handleChange" className='lg:mx-20 mt-15'>
-        <h2 className="font-roboto justify-items-start text-xl text-left font-normal mb-6 text-[#2A6B53] py-5">Additional Information</h2>
+        <h2 className="font-roboto justify-items-start text-xl text-left font-normal mb-2 text-[#2A6B53] py-4">Additional Information</h2>
 
         <div className='pt-6'>
       {/* Invisible file input */}

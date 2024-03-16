@@ -15,7 +15,7 @@ const VendorOTP = () => {
   return (
     <div className="flex flex-col  lg:flex-row justify-center">
       
-      <div className='w-full lg:absolute inset-0 lg:w-1/2 h-full'>
+      <div className='w-full lg:absolute inset-0 lg:w-1/2 h-full overflow-y-hidden'>
         <img
           src="./login page pic 2.png"
           alt="Login page image"
@@ -46,7 +46,7 @@ const VendorOTP = () => {
                 <input
                   key={index}
                   type="text"
-                  className="block w-[48px] h-[40px] text-center border-2 rounded-md bg-slate-300 text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-100 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600 lg:block w-[75px] h-[58px]"
+                  className="block w-[48px] h-[40px] text-center border-2 rounded-md bg-slate-300 text-2xl focus:border-blue-500 focus:ring-blue-500 disabled:opacity-100 disabled:pointer-events-none dark:bg-gray-700 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600 lg:block w-[75px] h-[58px]"
                   placeholder="⚬"
                   data-hs-pin-input-item
                 />
