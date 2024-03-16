@@ -19,7 +19,7 @@ const UserLogin = () => {
   return (
     <div className="flex flex-col md:flex-row justify-center">
       {/* Picture part */}
-      <div className="w-full lg:absolute inset-0 lg:w-1/2 h-full">
+      <div className="w-full lg:absolute inset-0 lg:w-1/2  overflow-y-hidden ">
         <img
           src="./Design.png"
           alt="Login page image"
@@ -28,7 +28,7 @@ const UserLogin = () => {
       </div>
 
       {/* Form part */}
-      <div className="bg-white    py-8 w-full lg:w-1/2 h-auto lg:absolute inset-y-0 right-0  mt-20 p-20">
+      <div className="bg-white    py-8 w-full lg:w-1/2 h-auto lg:absolute inset-y-0 right-0  mt-15 p-20">
         <div className='mt-10 flex justify-center '>
           <img src="./logo.png" alt="" />
         </div>

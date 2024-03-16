@@ -20,7 +20,7 @@ const UserFileUpload = () => {
     <div className="flex flex-col  lg:flex-row justify-center ">
         
             
-        <div className="w-full lg:absolute inset-0 lg:w-1/2 h-full">
+        <div className="w-full lg:absolute inset-0 lg:w-1/2 h-full overflow-y-hidden">
         <img
           src="./Design.png" 
           alt="Login page image"
