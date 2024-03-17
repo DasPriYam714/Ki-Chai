@@ -20,7 +20,7 @@ import VendorInterest from "./Components/VendorInter";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Login />,
+    element: <UserLogin />,
   },
   {
     path: "/reset",
